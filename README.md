@@ -64,15 +64,15 @@ git clone https://github.com/Lisandro79/BeatTheBookies.git
 
 Dropbox
 
-* [closing odds](https://www.dropbox.com/s/zuvb1j5j2kfhm85/closing_odds.zip?dl=0)
+* [closing odds](https://www.dropbox.com/s/g9vpjjlxjeruc3u/closing_odds.zip?dl=0)
 
-* [odds_series](https://www.dropbox.com/s/uabgely1vu4lqi0/odds_series.zip?dl=0)
+* [odds_series](https://www.dropbox.com/s/gqp3m6o5zsd8v63/odds_series.zip?dl=0)
 
 * [paper trading, real betting](https://www.dropbox.com/s/z4qi44s1dn4kuuv/paper_trading_real_betting_series.zip?dl=0)
 
-* [closing odds sql db](https://www.dropbox.com/s/nqe694jychidw0r/closing_odds_sql_db.zip?dl=0)
+* [closing odds sql db](https://www.dropbox.com/s/adj7xivk40vuvl7/closing_odds_sql_db.zip?dl=0)
 
-* [odds series sql db](https://www.dropbox.com/s/nzc0euaoojccuvw/odds_series_sql_db.zip?dl=0)
+* [odds series sql db](https://www.dropbox.com/s/sftxhxq03jd12j6/odds_series_sql_db.zip?dl=0)
 
 The sql database files are ~1.8GB of data. 
 
@@ -98,7 +98,7 @@ sudo apt-get install octave
 sudo apt-get install octave-control octave-image octave-io octave-optim octave-signal octave-statistics octave-nan
 ```
 
-The scripts were tested with Matlab, but they should work fine in Octave too.
+The scripts were tested with Matlab, but they should work fine in Octave too with little adjustment.
 
 # Historical analysis of closing odds.
 
