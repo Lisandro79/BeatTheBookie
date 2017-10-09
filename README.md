@@ -57,22 +57,26 @@ We provide matlab/octave code to reproduce all the figures and analysis in the p
 1. Clone this repository
 
 ```
-git clone https://github.com/Lisandro79/BeatTheBookies.git
+git clone https://github.com/Lisandro79/BeatTheBookie.git
 
 ```
 2. Download the dataset either from 
 
 Dropbox
 
-* [closing odds](https://www.dropbox.com/s/zuvb1j5j2kfhm85/closing_odds.zip?dl=0)
+* [closing odds](https://www.dropbox.com/s/g9vpjjlxjeruc3u/closing_odds.zip?dl=0)
 
-* [odds_series](https://www.dropbox.com/s/uabgely1vu4lqi0/odds_series.zip?dl=0)
+* [odds_series](https://www.dropbox.com/s/gqp3m6o5zsd8v63/odds_series.zip?dl=0)
+
+* [odds_series_b](https://www.dropbox.com/s/t26rwzvlwtt6xnb/odds_series_b.zip?dl=0)
 
 * [paper trading, real betting](https://www.dropbox.com/s/z4qi44s1dn4kuuv/paper_trading_real_betting_series.zip?dl=0)
 
-* [closing odds sql db](https://www.dropbox.com/s/nqe694jychidw0r/closing_odds_sql_db.zip?dl=0)
+* [closing odds sql db](https://www.dropbox.com/s/adj7xivk40vuvl7/closing_odds_sql_db.zip?dl=0)
 
-* [odds series sql db](https://www.dropbox.com/s/nzc0euaoojccuvw/odds_series_sql_db.zip?dl=0)
+* [odds series sql db](https://www.dropbox.com/s/sftxhxq03jd12j6/odds_series_sql_db.zip?dl=0)
+
+* [odds series b_sql db](https://www.dropbox.com/s/x6aookfjw25ne6q/odds_series_b_sql_db.zip?dl=0)
 
 The sql database files are ~1.8GB of data. 
 
@@ -98,7 +102,7 @@ sudo apt-get install octave
 sudo apt-get install octave-control octave-image octave-io octave-optim octave-signal octave-statistics octave-nan
 ```
 
-The scripts were tested with Matlab, but they should work fine in Octave too.
+The scripts were tested with Matlab, but they should work fine in Octave too with little adjustment.
 
 # Historical analysis of closing odds.
 
@@ -135,9 +139,11 @@ Figure3.m
 
 For those interested in perfoming their own analysis with the dataset we provide two sql databases. Both are provided in the form of sql dumps exported from mysql databases:
 
-(1) **"closing_odds_sql_db"**. Historical closing odds and match information for 472,807 football matches from 2000-01-01 to 2015-09-06 for 819 leagues around the world. 
+(1) **"closing_odds_sql_db"**. Historical closing odds and match information for 880,494 football matches from 2000-01-01 to 2015-09-06 for 912 leagues around the world. 
 
-(2) **"odds_series_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 30,650 football matches from September 2015 until March 2016 for 819 leagues around the world. 
+(2) **"odds_series_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 31,074 football matches from September 2015 until March 2016 for 553 leagues around the world. 
+
+(3) **"odds_series_b_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 82,786 football matches from March 2016 until November 2016 for 658 leagues around the world.
 
 **Database structure:**
 
