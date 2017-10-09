@@ -7,9 +7,7 @@ function strat = beatTheBookie_timeseries(dat_dir, files, bet, marg, nValidOdds,
 % available. Discard the other options
 
 money = 0;
-% data = [];
 accuracy = [];
-% Counters
 m = 2; % counter for the money
 acc = 1; % counter for accuracy
 st2 = 1;
@@ -48,12 +46,7 @@ for fi = 1 : length(files)
     else
         result = 3;
     end
-        
-    % hour
-    % id result to bet
-    % id bookies where the formula applies
-    %bets_id = zeros(3, length(hours{1})); % game result X hours
-    %possible_earn = nan(3, length(hours{1}));
+    
     possible_earn = 0;
 
     for h = 1 : length(hours{1})
@@ -84,8 +77,6 @@ for fi = 1 : length(files)
         if sum(earn_margin > 0) >= 1
             
             [~, id] = max(earn_margin);
-            %bets_id(id, h) = bookies(id);
-            %possible_earn(id, h) = bet  * (maximums(id) - 1);
             possible_earn = bet  * (maximums(id) - 1);
             break; 
         end
@@ -109,25 +100,7 @@ for fi = 1 : length(files)
     end
     
     % Decide where to place the bet: home, draw or away
-%     latency_result = nan(1,3);
-    %possible_results = {find(possible_earn(1,:) > 0) find(possible_earn(2,:) > 0) find(possible_earn(3,:) > 0)};
-    %for n = 1 : length(possible_results)
-    %    if isempty(possible_results{n})
-    %        possible_results{n} = nan;
-    %    end
-    %end
-    %shortest_latency(1,:) = [ min(possible_results{1}) min(possible_results{2}) min(possible_results{3})];
-    %[~, bet_result] = min(shortest_latency);
-    
-    % Avoid betting twice on the same bookie
-    %bets_id = bets_id(bet_result,:);
-    %possible_earn = possible_earn(bet_result,:);
-    %id_bookies = unique(bets_id(bets_id > 0));
-    
-    %for res = 1 : length(id_bookies)
     if possible_earn > 0    
-        %id2bet = find(bets_id == id_bookies(res), 1, 'first');
-        %aux_possible_earn = possible_earn(id2bet);
         aux_possible_earn = possible_earn;
         bet_result = id;
         

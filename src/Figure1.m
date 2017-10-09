@@ -17,9 +17,25 @@ dat_dir = '../data/';
 file_name = 'closing_odds.csv';
 
 % Fields: 
-% [ id, league, match_date, teamA, scoreA, teamB, scoreB, avg_win_1, avg_tie, ...
-% avg_win_2, max_win_1, max_tie, max_win_2, top_bookie_win_1, top_bookie_tie, ...
-% top_bookie_win_2, n_win_1, n_tie, n_win_2 ]
+% 1. match_table_id: unique identifier of the game
+% 2. league of the game
+% 3. match date
+% 4. home team
+% 5. 90-minute score of home team
+% 6. away team
+% 7. 90-minute score of away team
+% 8. average closing odds home win
+% 9. average closing odds draw
+% 10. average closing odds away win
+% 11. maximum offered closing odds home win
+% 12. maximum offered closing odds draw
+% 13. maximum offered closing odds away win
+% 14. name of bookmaker offering maximum closing odds for home win
+% 15. name of bookmaker offering maximum closing odds for draw
+% 16. name of bookmaker offering maximum closing odds for away win
+% 17. number of available closing odds for home win
+% 18. number of available closing odds for draw
+% 19. number of available closing odds for away win
 fid = fopen([dat_dir file_name], 'r');
 C = textscan(fid, '%s %s %s %s %f %s %f %f %f %f %f %f %f %s %s %s %f %f %f', 'delimiter', ',');
 fclose(fid);

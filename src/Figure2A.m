@@ -27,6 +27,25 @@ runStrategies = 1; % 1: run both strategies, 0: load results from disk
 %% Run strategies
 
 fid = fopen([dat_dir file_name], 'r');
+% 1. match_table_id: unique identifier of the game
+% 2. league of the game
+% 3. match date
+% 4. home team
+% 5. 90-minute score of home team
+% 6. away team
+% 7. 90-minute score of away team
+% 8. average closing odds home win
+% 9. average closing odds draw
+% 10. average closing odds away win
+% 11. maximum offered closing odds home win
+% 12. maximum offered closing odds draw
+% 13. maximum offered closing odds away win
+% 14. name of bookmaker offering maximum closing odds for home win
+% 15. name of bookmaker offering maximum closing odds for draw
+% 16. name of bookmaker offering maximum closing odds for away win
+% 17. number of available closing odds for home win
+% 18. number of available closing odds for draw
+% 19. number of available closing odds for away win
 C = textscan(fid, '%s %s %s %s %f %s %f %f %f %f %f %f %f %s %s %s %f %f %f', 'delimiter', ',');
 fclose(fid);
 

@@ -51,7 +51,7 @@ for samp = 1 : nSamps
         
         possible_earn = bet  * (maximums(id) - 1);
         bet_result = id;
-        c
+        
         % calculate loss / earning
         if isequal(bet_result, result)
             money(samp, m + 1) = money(samp, m) + possible_earn;
