@@ -1,6 +1,6 @@
 *~
 data/*
 paper/*
-#src/paper_figures/*.eps
+src/paper_figures/*.eps
 src/paper_figures/*.png
 src/*.mat
