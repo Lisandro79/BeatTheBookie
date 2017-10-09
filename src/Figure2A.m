@@ -164,6 +164,6 @@ h = barh(bins,counts);
 h.FaceColor = [1.0 0 0];
 set(gca,'visible','off');
 
-print(f1, '-dpng', './paper_figures/Figure2A.png')
-print(f1, '-depsc', './paper_figures/Figure2A.eps')
+print(f1, '-dpng', '../figures/Figure2A.png')
+print(f1, '-depsc', '../figures/Figure2A.eps')
 

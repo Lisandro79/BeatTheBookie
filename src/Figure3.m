@@ -13,7 +13,7 @@ addpath('./strategies/')
 %% Parameters
 dat_dir = '../data/';
 dat_series_dir = '../data/odds_series_b/';
-figs_dir = './paper_figures/';
+figs_dir = '../figures/';
 files = dir([dat_series_dir '*.txt']);
 
 save_data_name = 'returns_ContinuousOddsSeries_b';

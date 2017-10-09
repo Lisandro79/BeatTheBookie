@@ -12,7 +12,7 @@ function Figure1()
 
 addpath('./aux_files/')
 addpath('./aux_plot/')
-figs_dir = './paper_figures/';
+figs_dir = '../figures/';
 dat_dir = '../data/';
 file_name = 'closing_odds.csv';
 
