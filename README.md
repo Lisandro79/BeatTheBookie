@@ -32,7 +32,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Online Dashboard
 
-Our strategy was based on finding mispriced odds online. We provide the dashboard we used with the suggestions of our strategy. The dashboard shows the games and odds that our strategy suggests as mispriced. We would definitely bet on these games if the bookies did not block our accounts. Other than that, we truly believe that the effort of deploying such a strategy is completely worthless the time and monetary reward.
+Our strategy was based on finding mispriced odds online. We provide the dashboard we used with the suggestions of our strategy. The dashboard shows the games and odds that our strategy suggests as mispriced. We would definitely bet on these games if the bookies did not block our accounts. Other than that, we truly believe that the effort of deploying such a strategy is completely worthless, considering the time spent on the betting and the monetary reward.
 
 
 This is how the dashboard looks like. It displays the upcoming games, odds, bookmaker and the remaining time to the onset of the game.
