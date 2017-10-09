@@ -17,7 +17,7 @@ figs_dir = '../figures/';
 files = dir([dat_series_dir '*.txt']);
 
 save_data_name = 'returns_ContinuousOddsSeries_b';
-runStrategies = 0; 
+runStrategies = 1; 
 bet = 50; % money to bet
 marg = 0.05; % place bets above this margin
 nValidOdds = 3;  % minimum number of required valid odds at each time step

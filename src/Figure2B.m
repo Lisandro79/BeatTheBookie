@@ -24,7 +24,7 @@ figs_dir = '../figures/';
 files = dir([dat_dir '*.txt']);
 
 save_data_name = 'returns_ContinuousOddsSeries';
-runStrategies = 0; % 1: run the two strategies and plot results, 0: load results of strategies from disk and plot
+runStrategies = 1; % 1: run the two strategies and plot results, 0: load results of strategies from disk and plot
 bet = 50; % money to bet
 marg = 0.05; % place bets above this margin
 nValidOdds = 3;  % minimum number of required valid odds at each time step

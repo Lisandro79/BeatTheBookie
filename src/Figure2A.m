@@ -22,7 +22,7 @@ bet = 50; % money on each bet
 marg = 0.05; % margin odds above the mean.
 nSamps = 2000; % number of returns to calculate (with replacement) for the random strategy
 rand('seed',1) % use always the same seed to get same results
-runStrategies = 0; % 1: run both strategies, 0: load results from disk
+runStrategies = 1; % 1: run both strategies, 0: load results from disk
 
 %% Run strategies
 
