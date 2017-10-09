@@ -114,7 +114,7 @@ figures/
 sql/
 src/
 ```
-Then run:
+The first time the scripts are run, set "runStrategy" to 1, so that the script can generate the results of the strategy (after that "runStrategy" can be set to "0" to save some time). Then run:
 
 ```
 cd src/
@@ -122,7 +122,7 @@ Figure1.m
 Figure2A.m
 ```
 
-Code is self explanatory.
+The rest of the code is self explanatory. 
 
 
 ## Historical analysis of odds series.
