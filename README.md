@@ -60,7 +60,10 @@ We provide matlab/octave code to reproduce all the figures and analysis in the p
 git clone https://github.com/Lisandro79/BeatTheBookie.git
 
 ```
-2. Download the dataset either from 
+2. Download the dataset either from
+
+Google Drive ([link](https://drive.google.com/drive/folders/0B3zgn2ueCERNWnJRSnpIQTBDWEU?usp=sharing))
+
 
 Dropbox
 
@@ -78,11 +81,11 @@ Dropbox
 
 * [odds series b_sql db](https://www.dropbox.com/s/x6aookfjw25ne6q/odds_series_b_sql_db.zip?dl=0)
 
-The sql database files are ~1.8GB of data. 
+
+or Kaggle ([link] , requires registration])
 
 
-or [Kaggle (coming soon, requires registration)]()
-
+Note: The sql database files are ~1.8GB of data. Due to space restrictions, the SQL databases are only available for download via Google Drive or Dropbox.
 
 
 3. Install mysql and import the database dumps:
@@ -136,6 +139,15 @@ Figure3.m
 ```
 
 ## Dataset Description
+
+(1) **"closing_odds.csv"** The csv file is a matrix of games (rows) x features (teams, scores, league, etc). See the matlab scripts for a description of the features
+
+(2) **"odds_series"**
+
+(3) **"odds_series_b"**
+
+
+## SQL Database Description
 
 For those interested in perfoming their own analysis with the dataset we provide two sql databases. Both are provided in the form of sql dumps exported from mysql databases:
 
