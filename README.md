@@ -130,7 +130,16 @@ The rest of the code is self explanatory.
 
 ## Historical analysis of odds series.
 
-This analysis corresponds to Figure 2B and Figure 3 from the paper. Unzip files "odds_series" and "paper_trading_real_betting_series" in /data/ and run these scripts:
+This analysis corresponds to Figure 2B and Figure 3 from the paper. Unzip files "odds_series" and "paper_trading_real_betting_series" in /data/. The folder scrutcure should look like this:
+
+```
+/data/odds_series/
+/data/odds_series_b/
+
+```
+These two folders should contain several thousand files (one for each game).
+
+Then run these scripts:
 
 ```
 cd src/
