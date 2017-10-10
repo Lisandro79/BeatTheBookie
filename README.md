@@ -10,7 +10,7 @@ By Lisandro Kaunitz (1,2), Shenjun Zhong (3) and Javier Kreiner (4).
 4. Data Science department, CargoX, Sao Paulo, Brazil.
 
 
-This repository contains the code to reproduce our betting strategy for football games, as described in our paper *"Beating the bookies with their own numbers - and how the online sports betting market is rigged"* (https://arxiv.org/...). 
+This repository contains the code to reproduce our betting strategy for football games, as described in our paper *"Beating the bookies with their own numbers - and how the online sports betting market is rigged"* (https://arxiv.org/pdf/1710.02824.pdf). 
 
 Citation:
 
@@ -18,7 +18,7 @@ Citation:
 @inproceedings{BeatTheBookies,
     Author = {Lisandro Kaunitz and Shenjun Zhong and Javier Kreiner},
     Title = {Beating the bookies with their own numbers - and how the online sports betting market is rigged},
-    Journal = {},
+    Journal = {arXiv:1710.02824v1},
     Year = {2017}
 }
 ```
@@ -140,22 +140,13 @@ Figure3.m
 
 ## Dataset Description
 
-(1) **"closing_odds.csv"** The csv file is a matrix of games (rows) x features (teams, scores, league, etc). See the matlab scripts for a description of the features
-
-(2) **"odds_series"**
-
-(3) **"odds_series_b"**
-
-
-## SQL Database Description
-
 For those interested in perfoming their own analysis with the dataset we provide two sql databases. Both are provided in the form of sql dumps exported from mysql databases:
 
-(1) **"closing_odds_sql_db"**. Historical closing odds and match information for 880,494 football matches from 2000-01-01 to 2015-09-06 for 912 leagues around the world. 
+(1) **"closing_odds.csv"** and **"closing_odds_sql_db"**. Historical closing odds and match information for 880,494 football matches from 2000-01-01 to 2015-09-06 for 912 leagues around the world.  The csv file is a matrix of games (rows) x features (teams, scores, league, etc). See the matlab scripts for a description of the features
 
-(2) **"odds_series_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 31,074 football matches from September 2015 until March 2016 for 553 leagues around the world. 
+(2) **"odds_series"** and **"odds_series_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 31,074 football matches from September 2015 until March 2016 for 553 leagues around the world. 
 
-(3) **"odds_series_b_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 82,786 football matches from March 2016 until November 2016 for 658 leagues around the world.
+(3) **"odds_series_b"** and **"odds_series_b_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 82,786 football matches from March 2016 until November 2016 for 658 leagues around the world.
 
 **Database structure:**
 
