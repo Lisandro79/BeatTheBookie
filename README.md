@@ -10,7 +10,9 @@ By Lisandro Kaunitz (1,2), Shenjun Zhong (3) and Javier Kreiner (4).
 4. Data Science department, CargoX, Sao Paulo, Brazil.
 
 
-This repository contains the code to reproduce our betting strategy for football games, as described in our paper *"Beating the bookies with their own numbers - and how the online sports betting market is rigged"* (https://arxiv.org/pdf/1710.02824.pdf). 
+This repository contains the code to reproduce our betting strategy for football games, as described in our paper *"Beating the bookies with their own numbers - and how the online sports betting market is rigged"*
+
+https://arxiv.org/pdf/1710.02824.pdf 
 
 Citation:
 
