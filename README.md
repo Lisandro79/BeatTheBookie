@@ -64,6 +64,7 @@ git clone https://github.com/Lisandro79/BeatTheBookie.git
 
 Google Drive ([link](https://drive.google.com/drive/folders/0B3zgn2ueCERNWnJRSnpIQTBDWEU?usp=sharing))
 
+or
 
 Dropbox
 
@@ -80,9 +81,6 @@ Dropbox
 * [odds series sql db](https://www.dropbox.com/s/sftxhxq03jd12j6/odds_series_sql_db.zip?dl=0)
 
 * [odds series b_sql db](https://www.dropbox.com/s/x6aookfjw25ne6q/odds_series_b_sql_db.zip?dl=0)
-
-
-or Kaggle ([link] , requires registration])
 
 
 Note: The sql database files are ~1.8GB of data. Due to space restrictions, the SQL databases are only available for download via Google Drive or Dropbox.
