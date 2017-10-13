@@ -1,5 +1,6 @@
 ## Beating the bookies with their own numbers. 
-By Lisandro Kaunitz (1,2), Shenjun Zhong (3) and Javier Kreiner (4). 
+
+This repository contains the code to reproduce our betting strategy for football games, as described in the paper [*"Beating the bookies with their own numbers - and how the online sports betting market is rigged"*](https://arxiv.org/pdf/1710.02824.pdf), by Lisandro Kaunitz (1,2), Shenjun Zhong (3) and Javier Kreiner (4). 
 
 1. Research Center for Advanced Science and Technology, The University of Tokyo, Tokyo, Japan.
 
@@ -9,10 +10,6 @@ By Lisandro Kaunitz (1,2), Shenjun Zhong (3) and Javier Kreiner (4).
 
 4. Data Science department, CargoX, Sao Paulo, Brazil.
 
-
-This repository contains the code to reproduce our betting strategy for football games, as described in our paper *"Beating the bookies with their own numbers - and how the online sports betting market is rigged"*
-
-https://arxiv.org/pdf/1710.02824.pdf 
 
 Citation:
 
