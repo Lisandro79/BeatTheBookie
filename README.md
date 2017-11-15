@@ -44,8 +44,6 @@ This is how the dashboard looks like. It displays the upcoming games, odds, book
 You can follow the upcoming games online at:
 
 ```
-http://128.199.65.226
-or
 http://184.73.28.182
 ```
 
