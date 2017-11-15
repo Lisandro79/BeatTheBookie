@@ -45,6 +45,8 @@ You can follow the upcoming games online at:
 
 ```
 http://184.73.28.182
+or
+http://128.199.65.226/
 ```
 
 Note: The dashaboards might not be 100% synchronized, being two separate machines.
