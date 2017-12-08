@@ -1,6 +1,6 @@
 ## Beating the bookies with their own numbers. 
 
-This repository contains the code to reproduce our betting strategy for football games, as described in the paper [*"Beating the bookies with their own numbers - and how the online sports betting market is rigged"*](https://arxiv.org/pdf/1710.02824.pdf), by Lisandro Kaunitz (1,2), Shenjun Zhong (3) and Javier Kreiner (4). 
+This repository contains the code to reproduce our betting strategy for football games, as described in the paper [*"Beating the bookies with their own numbers - and how the online sports betting market is rigged"*](https://arxiv.org/abs/1710.02824), by Lisandro Kaunitz (1,2), Shenjun Zhong (3) and Javier Kreiner (4). 
 
 1. Research Center for Advanced Science and Technology, The University of Tokyo, Tokyo, Japan.
 
@@ -31,7 +31,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Online Dashboard
 
-Our strategy was based on finding mispriced odds online. We provide the dashboard we used with the suggestions of our strategy. The dashboard shows the games and odds that our strategy suggests as mispriced. We would definitely bet on these games if the bookies did not block our accounts. Other than that, we truly believe that the effort of deploying such a strategy is completely worthless, considering the time spent on the betting and the monetary reward.
+Our strategy was based on finding mispriced odds online. We provide the dashboard we used with the suggestions of our strategy. You can find a general non-mathematical short explanation of the strategy ([here](http://wp.me/p7wVWn-9Z))
+
+The dashboard shows the games and odds that our strategy suggests as mispriced. We would definitely bet on these games if the bookies did not block our accounts. Other than that, we truly believe that the effort of deploying such a strategy is completely worthless, considering the time spent on the betting and the monetary reward.
 
 
 This is how the dashboard looks like. It displays the upcoming games, odds, bookmaker and the remaining time to the onset of the game.
@@ -42,9 +44,9 @@ This is how the dashboard looks like. It displays the upcoming games, odds, book
 You can follow the upcoming games online at:
 
 ```
-http://128.199.65.226
-or
 http://184.73.28.182
+or
+http://128.199.65.226/
 ```
 
 Note: The dashaboards might not be 100% synchronized, being two separate machines.
