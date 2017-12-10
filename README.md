@@ -1,5 +1,6 @@
 ## Beating the bookies with their own numbers. 
-By Lisandro Kaunitz (1,2), Shenjun Zhong (3) and Javier Kreiner (4). 
+
+This repository contains the code to reproduce our betting strategy for football games, as described in the paper [*"Beating the bookies with their own numbers - and how the online sports betting market is rigged"*](https://arxiv.org/abs/1710.02824), by Lisandro Kaunitz (1,2), Shenjun Zhong (3) and Javier Kreiner (4). 
 
 1. Research Center for Advanced Science and Technology, The University of Tokyo, Tokyo, Japan.
 
@@ -10,15 +11,13 @@ By Lisandro Kaunitz (1,2), Shenjun Zhong (3) and Javier Kreiner (4).
 4. Data Science department, CargoX, Sao Paulo, Brazil.
 
 
-This repository contains the code to reproduce our betting strategy for football games, as described in our paper *"Beating the bookies with their own numbers - and how the online sports betting market is rigged"* (https://arxiv.org/...). 
-
 Citation:
 
 ```
 @inproceedings{BeatTheBookies,
     Author = {Lisandro Kaunitz and Shenjun Zhong and Javier Kreiner},
     Title = {Beating the bookies with their own numbers - and how the online sports betting market is rigged},
-    Journal = {},
+    Journal = {arXiv:1710.02824v1},
     Year = {2017}
 }
 ```
@@ -32,7 +31,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Online Dashboard
 
-Our strategy was based on finding mispriced odds online. We provide the dashboard we used with the suggestions of our strategy. The dashboard shows the games and odds that our strategy suggests as mispriced. We would definitely bet on these games if the bookies did not block our accounts. Other than that, we truly believe that the effort of deploying such a strategy is completely worthless, considering the time spent on the betting and the monetary reward.
+Our strategy was based on finding mispriced odds online. We provide the dashboard we used with the suggestions of our strategy. You can find a general non-mathematical short explanation of the strategy ([here](http://wp.me/p7wVWn-9Z))
+
+The dashboard shows the games and odds that our strategy suggests as mispriced. We would definitely bet on these games if the bookies did not block our accounts. Other than that, we truly believe that the effort of deploying such a strategy is completely worthless, considering the time spent on the betting and the monetary reward.
 
 
 This is how the dashboard looks like. It displays the upcoming games, odds, bookmaker and the remaining time to the onset of the game.
@@ -43,9 +44,9 @@ This is how the dashboard looks like. It displays the upcoming games, odds, book
 You can follow the upcoming games online at:
 
 ```
-http://128.199.65.226
-or
 http://184.73.28.182
+or
+http://128.199.65.226/
 ```
 
 Note: The dashaboards might not be 100% synchronized, being two separate machines.
@@ -60,7 +61,11 @@ We provide matlab/octave code to reproduce all the figures and analysis in the p
 git clone https://github.com/Lisandro79/BeatTheBookie.git
 
 ```
-2. Download the dataset either from 
+2. Download the dataset either from
+
+Google Drive ([link](https://drive.google.com/drive/folders/0B3zgn2ueCERNWnJRSnpIQTBDWEU?usp=sharing))
+
+or
 
 Dropbox
 
@@ -78,11 +83,8 @@ Dropbox
 
 * [odds series b_sql db](https://www.dropbox.com/s/x6aookfjw25ne6q/odds_series_b_sql_db.zip?dl=0)
 
-The sql database files are ~1.8GB of data. 
 
-
-or [Kaggle (coming soon, requires registration)]()
-
+Note: The sql database files are ~1.8GB of data. Due to space restrictions, the SQL databases are only available for download via Google Drive or Dropbox.
 
 
 3. Install mysql and import the database dumps:
@@ -127,7 +129,16 @@ The rest of the code is self explanatory.
 
 ## Historical analysis of odds series.
 
-This analysis corresponds to Figure 2B and Figure 3 from the paper. Unzip files "odds_series" and "paper_trading_real_betting_series" in /data/ and run these scripts:
+This analysis corresponds to Figure 2B and Figure 3 from the paper. Unzip files "odds_series" and "paper_trading_real_betting_series" in /data/. The folder scrutcure should look like this:
+
+```
+/data/odds_series/
+/data/odds_series_b/
+
+```
+These two folders should contain several thousand files (one for each game).
+
+Then run these scripts:
 
 ```
 cd src/
@@ -139,11 +150,11 @@ Figure3.m
 
 For those interested in perfoming their own analysis with the dataset we provide two sql databases. Both are provided in the form of sql dumps exported from mysql databases:
 
-(1) **"closing_odds_sql_db"**. Historical closing odds and match information for 880,494 football matches from 2000-01-01 to 2015-09-06 for 912 leagues around the world. 
+(1) **"closing_odds.csv"** and **"closing_odds_sql_db"**. Historical closing odds and match information for 880,494 football matches from 2000-01-01 to 2015-09-06 for 912 leagues around the world.  The csv file is a matrix of games (rows) x features (teams, scores, league, etc). See the matlab scripts for a description of the features
 
-(2) **"odds_series_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 31,074 football matches from September 2015 until March 2016 for 553 leagues around the world. 
+(2) **"odds_series"** and **"odds_series_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 31,074 football matches from September 2015 until March 2016 for 553 leagues around the world. 
 
-(3) **"odds_series_b_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 82,786 football matches from March 2016 until November 2016 for 658 leagues around the world.
+(3) **"odds_series_b"** and **"odds_series_b_sql_db"**. Continuous odds series (series of odds with odds movements) and match information for 82,786 football matches from March 2016 until November 2016 for 658 leagues around the world.
 
 **Database structure:**
 
