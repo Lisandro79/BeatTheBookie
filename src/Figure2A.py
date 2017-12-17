@@ -8,13 +8,23 @@ import bisect
 
 bet = 50 # money on each bet
 marg = 0.05 # margin odds above the mean.
-n_samples = 100 # number of returns to calculate (with replacement) for the random strategy
+n_samples = 10 # number of returns to calculate (with replacement) for the random strategy
 #rand('seed',1) # use always the same seed to get same results
 runStrategies = 1 # 1: run both strategies, 0: load results from disk
 
 
 dir_path = '../data/'
-data = pd.read_csv(dir_path + "closing_odds.csv") 
+
+# if your file has no headers please uncomment this line and comment the following
+#data = pd.read_csv(dir_path + "closing_odds.csv",
+#                   names = ['match_id','league','match_date','home_team',
+#                           'home_score','away_team','away_score','avg_odds_home_win',
+#                            'avg_odds_draw','avg_odds_away_win','max_odds_home_win',
+#                            'max_odds_draw','max_odds_away_win','top_bookie_home_win',
+#                            'top_bookie_draw','top_bookie_away_win','n_odds_home_win',
+#                            'n_odds_draw','n_odds_away_win'], header=None) 
+
+data = pd.read_csv(dir_path + "closing_odds.csv")
 
 # helper function from: https://eli.thegreenplace.net/2010/01/22/weighted-random-generation-in-python
 
@@ -56,17 +66,21 @@ def beatthebookie_strategy(data, bet, marg):
                          (max_arg == 2) * data['max_odds_away_win']
     max_margin_mean_odd = (max_arg == 0) * data['avg_odds_home_win'] + \
                          (max_arg == 1) * data['avg_odds_draw'] + \
-                         (max_arg == 2) * data['avg_odds_away_win']
+                         (max_arg == 2) * data['avg_odds_away_win'
+                         ]
+    top_bookie = (max_arg == 0) * data['top_bookie_home_win'] + \
+                 (max_arg == 1) * data['top_bookie_draw'] + \
+                 (max_arg == 2) * data['top_bookie_away_win']
     
     should_bet = max_margin > 0
     bets_outcome = bet * (max_margin_max_odd - 1) * (max_arg == result) - bet * (max_arg != result)
     accuracy = (max_arg == result)[should_bet].apply(int)
     
     return [np.cumsum(bets_outcome[should_bet]), accuracy, max_margin_max_odd[should_bet], max_margin_mean_odd[should_bet], \
-            max_arg.iloc(np.where(should_bet))]
+            max_arg.iloc(np.where(should_bet)), top_bookie[should_bet]]
 
 
-[s1_money, s1_accuracy, s1_max_odds, s1_mean_odds, s1_ids] = beatthebookie_strategy(data,bet,marg)
+[s1_money, s1_accuracy, s1_max_odds, s1_mean_odds, s1_ids, s1_top_bookie] = beatthebookie_strategy(data,bet,marg)
 
 def random_strategy(data, n_samples, n_games, bet, p_home, p_draw, p_away):
     
