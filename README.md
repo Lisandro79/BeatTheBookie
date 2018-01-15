@@ -52,7 +52,7 @@ http://128.199.65.226/
 Note: The dashaboards might not be 100% synchronized, being two separate machines.
 
 
-[![Donate](https://brianmacdonald.github.io/Ethonate/svg/eth-donate-blue.svg)](https://brianmacdonald.github.io/Ethonate/address#0x520120af9464Ef42FF9D663f9C59FafDF51aa54F)
+[![Donate](https://brianmacdonald.github.io/Ethonate/svg/eth-donate-blue.svg)](https://brianmacdonald.github.io/Ethonate/address#0xf8DC511364848eA883fBB1dD33F8B8667307b5Df)
 
 
 
