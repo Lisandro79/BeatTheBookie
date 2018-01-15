@@ -58,8 +58,6 @@ We are funding the dashboard by ourselves, and the amazon server that we are usi
 
  [![Donate](https://brianmacdonald.github.io/Ethonate/svg/eth-donate-blue.svg)](https://brianmacdonald.github.io/Ethonate/address#0xf8DC511364848eA883fBB1dD33F8B8667307b5Df)
 
-[![Donate](https://github.com/Lisandro79/Ethonate/svg/eth-donate-blue.svg)](https://github.com/Lisandro79/Ethonate/address#0xf8DC511364848eA883fBB1dD33F8B8667307b5Df)
-
 
 
 ## How to run the code
