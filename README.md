@@ -49,15 +49,6 @@ or
 http://104.198.69.97/
 ```
 
-## Support
-
-We are funding the dashboard by ourselves, and the amazon server that we are using is sometimes not powerful enough to host many users in simultaneous (e.g., there were 2000 visitors on the 10th of January and that crashed the server). Unfortunately we do not have funds to  pay for a bigger server at the moment. If you find the dashboard useful, please consider making a donation. We will use the funds to pay for a better server to support the dashboard.
-
-
- [![Donate](https://brianmacdonald.github.io/Ethonate/svg/eth-donate-blue.svg)](https://brianmacdonald.github.io/Ethonate/address#0xf8DC511364848eA883fBB1dD33F8B8667307b5Df)
-
-
-
 ## How to run the code
 
 We provide matlab/octave code to reproduce all the figures and analysis in the paper. 
