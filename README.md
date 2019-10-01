@@ -45,8 +45,6 @@ You can follow the upcoming games online at:
 
 ```
 http://35.185.212.121/
-or 
-http://104.198.69.97/
 ```
 
 ## How to run the code
