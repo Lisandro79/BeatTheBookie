@@ -44,7 +44,7 @@ This is how the dashboard looks like. It displays the upcoming games, odds, book
 You can follow the upcoming games online at:
 
 ```
-http://35.185.212.121/
+http://143.89.16.84:9090/
 ```
 
 ## How to run the code
